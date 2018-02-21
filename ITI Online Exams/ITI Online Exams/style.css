@@ -10,7 +10,7 @@ blockquote:before, blockquote:after, q:before, q:after { content: ""; }
 blockquote, q { quotes: "" ""; }
 strong { font-weight: bold; }
 
-/*--- STARTING STYLES ---*/
+/*--- STARTING STYLES test ---*/
 
 body { font: normal 76% Arial,sans-serif; text-align: center; color: #333; background: #f8f8f8 url('temp/bg-gradient.gif') repeat-x 0 3em;
 }
