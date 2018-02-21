@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ITI online exams</title>
+    <%--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />--%>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <%--id="current"--%>
+            <asp:ContentPlaceHolder ID="navPlaceHolder" runat="server">
+                <li><a href="http://all-free-download.com/free-website-templates/"  accesskey="h">HOME</a></li>
+                <li><a href="http://all-free-download.com/free-website-templates/" accesskey="s">SOLUTIONS</a></li>
+                <li><a href="http://all-free-download.com/free-website-templates/" accesskey="j">JOIN US</a></li>
+                <li><a href="http://all-free-download.com/free-website-templates/" accesskey="c">CONTACT</a></li>
+            </asp:ContentPlaceHolder>
+        </ul>
+    </div>
+    <div id="container">
+        <div id="header">
+            <asp:ContentPlaceHolder ID="headerPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <br />
+        <br />
+        <div id="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="extra-content">
+            <asp:ContentPlaceHolder ID="extracontentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div id="footer">
+        <p>&copy; 2018 ITI.onlineExams.com  &amp;</p>
+    </div>
+</body>
+</html>
