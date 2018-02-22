@@ -10,10 +10,10 @@
         <ul>
             <%--id="current"--%>
             <asp:ContentPlaceHolder ID="navPlaceHolder" runat="server">
-                <li><a href="http://all-free-download.com/free-website-templates/"  accesskey="h">HOME</a></li>
-                <li><a href="http://all-free-download.com/free-website-templates/" accesskey="s">SOLUTIONS</a></li>
-                <li><a href="http://all-free-download.com/free-website-templates/" accesskey="j">JOIN US</a></li>
-                <li><a href="http://all-free-download.com/free-website-templates/" accesskey="c">CONTACT</a></li>
+                <li><a href="http://all-free-download.com/free-website-templates/"  accesskey="h">Home</a></li>
+                <li><a href="http://all-free-download.com/free-website-templates/" accesskey="g">Grade</a></li>
+                <li><a href="http://all-free-download.com/free-website-templates/" accesskey="e">Exams</a></li>
+                <li><a href="http://all-free-download.com/free-website-templates/" accesskey="c">Courses</a></li>
             </asp:ContentPlaceHolder>
         </ul>
     </div>
