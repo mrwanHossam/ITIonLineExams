@@ -50,7 +50,8 @@ img.centered { display: block; margin-left: auto; margin-right: auto; border: 0;
 #content { float: left; width: 325px; margin: 0 50px 3em 0; }
 #content h3, #extra-content h3 { line-height: 40px; background: url('temp/herbs.gif') no-repeat; 
 padding: 0 0 0 50px; margin: 0.5em 0 1em 0; }
-#container p, #content p { line-height: 1.4; text-align: justify; margin: 2em 1em; }
+#container p, #content p { line-height: 1.4; text-align: justify; margin: 2em 1em 2em 200px;
+}
 
 #extra-content { float: left; width: 325px; }
 #extra-content ul { list-style-type: square; list-style-position: inside; }
