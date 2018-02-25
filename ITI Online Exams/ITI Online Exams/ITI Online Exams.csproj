@@ -99,6 +99,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Site1.Master" />
+    <Content Include="StudentAnswers.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -113,7 +114,9 @@
     <Content Include="temp\herbs.gif" />
     <Content Include="temp\indicator.gif" />
     <Content Include="style.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="index.aspx.cs">
@@ -130,6 +133,13 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAnswers.aspx.cs">
+      <DependentUpon>StudentAnswers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentAnswers.aspx.designer.cs">
+      <DependentUpon>StudentAnswers.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
