@@ -1,4 +1,4 @@
-/*--- RESET STYLES from Eric Meyer ---*/
+/*--- RESETsdf STYLES from Eric Meyer ---*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
 
 :focus { outline: 0; }
@@ -10,7 +10,7 @@ blockquote:before, blockquote:after, q:before, q:after { content: ""; }
 blockquote, q { quotes: "" ""; }
 strong { font-weight: bold; }
 
-/*--- STARTING STYLES test ---*/
+/*--- STARTING STYLES ---*/
 
 body { font: normal 76% Arial,sans-serif; text-align: center; color: #333; background: #f8f8f8 url('temp/bg-gradient.gif') repeat-x 0 3em;
 }
@@ -50,7 +50,8 @@ img.centered { display: block; margin-left: auto; margin-right: auto; border: 0;
 #content { float: left; width: 325px; margin: 0 50px 3em 0; }
 #content h3, #extra-content h3 { line-height: 40px; background: url('temp/herbs.gif') no-repeat; 
 padding: 0 0 0 50px; margin: 0.5em 0 1em 0; }
-#container p, #content p { line-height: 1.4; text-align: justify; margin: 2em 1em; }
+#container p, #content p { line-height: 1.4; text-align: justify; margin: 2em 1em 2em 200px;
+}
 
 #extra-content { float: left; width: 325px; }
 #extra-content ul { list-style-type: square; list-style-position: inside; }

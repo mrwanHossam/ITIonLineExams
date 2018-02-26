@@ -109,14 +109,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="temp\bg-gradient.gif" />
     <Content Include="temp\ghostly_smoke.jpg" />
     <Content Include="temp\herbs.gif" />
     <Content Include="temp\indicator.gif" />
     <Content Include="style.css" />
+
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+
+    <Content Include="login proc.sql" />
+    <Content Include="Web.config" />
+
   </ItemGroup>
   <ItemGroup>
     <Compile Include="index.aspx.cs">
@@ -127,6 +133,13 @@
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
