@@ -62,5 +62,10 @@ namespace ITI_Online_Exams
             }
             
         }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("StudentREG.aspx");
+        }
     }
 }

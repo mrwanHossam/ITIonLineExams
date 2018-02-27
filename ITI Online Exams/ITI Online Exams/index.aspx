@@ -7,8 +7,11 @@
     <li><a href="http://all-free-download.com/free-website-templates/" accesskey="c">Courses</a></li>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="headerPlaceHolder1" runat="server">
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
+
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="extracontentPlaceHolder" runat="server">
+
 </asp:Content>

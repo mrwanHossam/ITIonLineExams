@@ -10,42 +10,42 @@
 namespace ITI_Online_Exams {
     
     
-    public partial class registration {
+    public partial class StudentREG {
         
         /// <summary>
-        /// txtUserName control.
+        /// ddlstudents control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUserName;
+        protected global::System.Web.UI.WebControls.DropDownList ddlstudents;
         
         /// <summary>
-        /// txtPassword control.
+        /// lableSSN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        protected global::System.Web.UI.WebControls.Label lableSSN;
         
         /// <summary>
-        /// btnLogin control.
+        /// txtStudentSSNID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogin;
+        protected global::System.Web.UI.WebControls.TextBox txtStudentSSNID;
         
         /// <summary>
-        /// btnRegister control.
+        /// btnNext control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegister;
+        protected global::System.Web.UI.WebControls.Button btnNext;
     }
 }
