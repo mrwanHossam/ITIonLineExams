@@ -1,15 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Students.aspx.cs" Inherits="ITI_Online_Exams.Students" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="navPlaceHolder" runat="server">
-
-
-
-
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="headerPlaceHolder1" runat="server">
-
-
-    <table style="width:100%;">
+     <form id="form1" runat="server">
+        <div>
+            <table style="width:100%;">
                 <tr>
                     <td class="auto-style1">Depatrment Name : </td>
                     <td class="auto-style2">
@@ -85,6 +80,9 @@
                 <asp:BoundField DataField="Department.Dept_Name" HeaderText="Department" />
             </Columns>
             </asp:GridView>
+        
+        </div>
+    </form>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 </asp:Content>

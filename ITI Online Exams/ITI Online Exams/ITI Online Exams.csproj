@@ -100,19 +100,31 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="instructors.aspx" />
+    <Content Include="OnlineExamDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OnlineExamDataModel.edmx</DependentUpon>
+      <LastGenOutput>OnlineExamDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="OnlineExamDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OnlineExamDataModel.edmx</DependentUpon>
+      <LastGenOutput>OnlineExamDataModel.cs</LastGenOutput>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Questions.aspx" />
     <Content Include="Site1.Master" />
     <Content Include="StudentAnswers.aspx" />
-    <EntityDeploy Include="Student_DB.edmx">
+    <EntityDeploy Include="OnlineExamDataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Student_DB.Designer.cs</LastGenOutput>
+      <LastGenOutput>OnlineExamDataModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Student_DB.edmx.diagram">
-      <DependentUpon>Student_DB.edmx</DependentUpon>
-    </None>
+    <Content Include="OnlineExamDataModel.edmx.diagram">
+      <DependentUpon>OnlineExamDataModel.edmx</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -124,23 +136,68 @@
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
     <Content Include="StudentREG.aspx" />
+    <Content Include="Students.aspx" />
     <Content Include="temp\bg-gradient.gif" />
     <Content Include="temp\ghostly_smoke.jpg" />
     <Content Include="temp\herbs.gif" />
     <Content Include="temp\indicator.gif" />
     <Content Include="style.css" />
+    <Content Include="Topics.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="login proc.sql" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Choice.cs">
+      <DependentUpon>OnlineExamDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Course.cs">
+      <DependentUpon>OnlineExamDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Department.cs">
+      <DependentUpon>OnlineExamDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Exam.cs">
+      <DependentUpon>OnlineExamDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_Question.cs">
+      <DependentUpon>OnlineExamDataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor.cs">
+      <DependentUpon>OnlineExamDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="instructors.aspx.cs">
+      <DependentUpon>instructors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="instructors.aspx.designer.cs">
+      <DependentUpon>instructors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ins_Course.cs">
+      <DependentUpon>OnlineExamDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineExamDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnlineExamDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineExamDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnlineExamDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineExamDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnlineExamDataModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="login.aspx.cs">
@@ -149,6 +206,16 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Question.cs">
+      <DependentUpon>OnlineExamDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Questions.aspx.cs">
+      <DependentUpon>Questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Questions.aspx.designer.cs">
+      <DependentUpon>Questions.aspx</DependentUpon>
     </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
@@ -164,12 +231,39 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="Student.cs">
+      <DependentUpon>OnlineExamDataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="StudentREG.aspx.cs">
       <DependentUpon>StudentREG.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="StudentREG.aspx.designer.cs">
       <DependentUpon>StudentREG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Students.aspx.cs">
+      <DependentUpon>Students.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Students.aspx.designer.cs">
+      <DependentUpon>Students.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student_DB.cs" />
+    <Compile Include="Stud_Course.cs">
+      <DependentUpon>OnlineExamDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>OnlineExamDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Topic.cs">
+      <DependentUpon>OnlineExamDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Topics.aspx.cs">
+      <DependentUpon>Topics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topics.aspx.designer.cs">
+      <DependentUpon>Topics.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

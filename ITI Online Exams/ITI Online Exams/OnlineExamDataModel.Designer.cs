@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\Asmaa ITI\ASP.NET\project\ITIonLineExams\ITI Online Exams\ITI Online Exams\Student_DB.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\Asmaa ITI\ASP.NET\GIT Project\ITIonLineExams\ITI Online Exams\ITI Online Exams\OnlineExamDataModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

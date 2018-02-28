@@ -10,7 +10,7 @@
 namespace ITI_Online_Exams {
     
     
-    public partial class Students {
+    public partial class Questions {
         
         /// <summary>
         /// form1 control.
@@ -22,22 +22,22 @@ namespace ITI_Online_Exams {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// ddl_dept control.
+        /// ddl_courses control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddl_dept;
+        protected global::System.Web.UI.WebControls.DropDownList ddl_courses;
         
         /// <summary>
-        /// txt_fname control.
+        /// txt_qid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_fname;
+        protected global::System.Web.UI.WebControls.TextBox txt_qid;
         
         /// <summary>
         /// RequiredFieldValidator1 control.
@@ -49,13 +49,13 @@ namespace ITI_Online_Exams {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
-        /// txt_lname control.
+        /// txt_qtext control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_lname;
+        protected global::System.Web.UI.WebControls.TextBox txt_qtext;
         
         /// <summary>
         /// RequiredFieldValidator2 control.
@@ -67,13 +67,13 @@ namespace ITI_Online_Exams {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
         
         /// <summary>
-        /// txt_address control.
+        /// txt_qtype control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_address;
+        protected global::System.Web.UI.WebControls.TextBox txt_qtype;
         
         /// <summary>
         /// RequiredFieldValidator3 control.
@@ -85,13 +85,22 @@ namespace ITI_Online_Exams {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
         
         /// <summary>
-        /// txt_age control.
+        /// lbl_Qtype control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_age;
+        protected global::System.Web.UI.WebControls.Label lbl_Qtype;
+        
+        /// <summary>
+        /// txt_qanswer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_qanswer;
         
         /// <summary>
         /// RequiredFieldValidator4 control.
@@ -103,48 +112,39 @@ namespace ITI_Online_Exams {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
         
         /// <summary>
-        /// RangeValidator1 control.
+        /// lbl_Qanswer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator RangeValidator1;
+        protected global::System.Web.UI.WebControls.Label lbl_Qanswer;
         
         /// <summary>
-        /// btn_save control.
+        /// btn_save_Q control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_save;
+        protected global::System.Web.UI.WebControls.Button btn_save_Q;
         
         /// <summary>
-        /// st_hidden_id control.
+        /// Q_hidden_id control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputHidden st_hidden_id;
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden Q_hidden_id;
         
         /// <summary>
-        /// lbl_meesage control.
+        /// grd_Questions control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_meesage;
-        
-        /// <summary>
-        /// grd_students control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grd_students;
+        protected global::System.Web.UI.WebControls.GridView grd_Questions;
     }
 }

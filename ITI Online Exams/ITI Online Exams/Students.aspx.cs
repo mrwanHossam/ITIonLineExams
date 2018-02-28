@@ -7,8 +7,8 @@ using System.Web.UI.WebControls;
 
 namespace ITI_Online_Exams
 {
-    public partial class Students : System.Web.UI.Page
-    {
+	public partial class Students : System.Web.UI.Page
+	{
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -41,6 +41,7 @@ namespace ITI_Online_Exams
 
         protected void btn_save_Click(object sender, EventArgs e)
         {
+            
             if (btn_save.Text == "Save")
             {
                 Student new_student = new Student();
@@ -109,6 +110,8 @@ namespace ITI_Online_Exams
                 btn_save.Text = "Update";
                 st_hidden_id.Value = _studentId.ToString();
             }
+
+
         }
     }
 }
