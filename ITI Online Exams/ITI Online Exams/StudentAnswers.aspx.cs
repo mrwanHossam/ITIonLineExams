@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace ITI_Online_Exams
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class WebForm1 : Page
     {
         public SqlDataReader dr;
         protected void Page_Load(object sender, EventArgs e)
@@ -31,8 +31,7 @@ namespace ITI_Online_Exams
             //GridView1.DataSource = dr;
             //GridView1.DataBind();
             con1.Close();
-            Repeater1.DataSource = dr;
-            
+            Repeater1.DataSource = dr;            
             //Repeater1.DataBind();
         }
     }

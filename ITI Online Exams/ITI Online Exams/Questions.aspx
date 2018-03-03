@@ -1,10 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Questions.aspx.cs" Inherits="ITI_Online_Exams.Questions" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="navPlaceHolder" runat="server">
+    <li><a href="#" accesskey="h">Home</a></li>
+    <li><a href="instructors.aspx" accesskey="i">instractors</a></li>
+    <li><a href="Students.aspx" accesskey="s">Students</a></li>
+    <li><a href="Questions.aspx" accesskey="q" id="current">Questions</a></li>
+    <li><a href="Topics.aspx" accesskey="t">Topics</a></li>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="headerPlaceHolder1" runat="server">
+    <br />
+    <br />
     <form id="form1" runat="server">
         <div>
-            <table style="width:100%;">
+            <table style="width: 100%;">
                 <tr>
                     <td class="auto-style1">Course Name :</td>
                     <td class="auto-style2">
@@ -59,8 +67,8 @@
                         <asp:Label ID="lbl_msg_q" runat="server"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
-                     <td>
-                         <input id="Q_hidden_id" runat="server" type="hidden" />
+                    <td>
+                        <input id="Q_hidden_id" runat="server" type="hidden" />
                     </td>
                 </tr>
             </table>
@@ -69,8 +77,8 @@
             <Columns>
                 <asp:TemplateField>
                     <ItemTemplate>
-                        <asp:Button CommandName="DeleteQuestion" CommandArgument='<%#Eval("Qstn_Id") %>' runat="server" Text ="Delete" />
-                        <asp:Button CommandName="EditCurrentQuestion" CommandArgument='<%#Eval("Qstn_Id") %>' runat="server" Text ="Edit" />
+                        <asp:Button CommandName="DeleteQuestion" CommandArgument='<%#Eval("Qstn_Id") %>' runat="server" Text="Delete" />
+                        <asp:Button CommandName="EditCurrentQuestion" CommandArgument='<%#Eval("Qstn_Id") %>' runat="server" Text="Edit" />
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:BoundField DataField="Qstn_Id" HeaderText="Question id" />
@@ -79,7 +87,7 @@
                 <asp:BoundField DataField="Qstn_Answer" HeaderText="Question answer" />
                 <asp:BoundField DataField="Course.Crs_Name" HeaderText="Course Name" />
             </Columns>
-          
+
         </asp:GridView>
     </form>
 </asp:Content>

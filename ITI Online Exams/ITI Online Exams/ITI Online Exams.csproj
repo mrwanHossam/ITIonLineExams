@@ -100,6 +100,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin.aspx" />
     <Content Include="instructors.aspx" />
     <Content Include="OnlineExamDataModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -116,6 +117,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Questions.aspx" />
+    <Content Include="Register.aspx" />
     <Content Include="Site1.Master" />
     <Content Include="StudentAnswers.aspx" />
     <EntityDeploy Include="OnlineExamDataModel.edmx">
@@ -135,6 +137,7 @@
   <ItemGroup>
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="StudentHome.aspx" />
     <Content Include="StudentREG.aspx" />
     <Content Include="Students.aspx" />
     <Content Include="temp\bg-gradient.gif" />
@@ -149,6 +152,13 @@
     <Content Include="login proc.sql" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Choice.cs">
       <DependentUpon>OnlineExamDataModel.tt</DependentUpon>
     </Compile>
@@ -233,6 +243,20 @@
     </Compile>
     <Compile Include="Student.cs">
       <DependentUpon>OnlineExamDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAnswers.aspx.cs">
+      <DependentUpon>StudentAnswers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentAnswers.aspx.designer.cs">
+      <DependentUpon>StudentAnswers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentHome.aspx.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentHome.aspx.designer.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="StudentREG.aspx.cs">
       <DependentUpon>StudentREG.aspx</DependentUpon>

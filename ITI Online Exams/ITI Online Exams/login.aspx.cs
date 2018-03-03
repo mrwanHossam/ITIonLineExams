@@ -42,14 +42,15 @@ namespace ITI_Online_Exams
             {
                 if (passwordChecked && !userType )
                 {
-                    Response.Write("<script>alert('studint')</script>");
-                    //Response.Redirect("index.aspx");
+                    //Response.Write("<script>alert('studint')</script>");
+                    Response.Redirect("StudentHome.aspx");
                     //here will redirect to student home page
                 }
                 else if (passwordChecked && userType)
                 {
                     //here will redirect to admin home page 
-                    Response.Write("<script>alert('admin')</script>");
+                    //Response.Write("<script>alert('admin')</script>");
+                    Response.Redirect("Admin.aspx");
                 }
                 else if (!passwordChecked)
                 {

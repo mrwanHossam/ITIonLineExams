@@ -1,10 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Students.aspx.cs" Inherits="ITI_Online_Exams.Students" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="navPlaceHolder" runat="server">
+    <li><a href="#" accesskey="h">Home</a></li>
+    <li><a href="instructors.aspx" accesskey="i">instractors</a></li>
+    <li><a href="Students.aspx" accesskey="s" id="current">Students</a></li>
+    <li><a href="Questions.aspx" accesskey="q">Questions</a></li>
+    <li><a href="Topics.aspx" accesskey="t">Topics</a></li>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="headerPlaceHolder1" runat="server">
-     <form id="form1" runat="server">
+    <br />
+    <br />
+    <form id="form1" runat="server">
         <div>
-            <table style="width:100%;">
+            <table style="width: 100%;">
                 <tr>
                     <td class="auto-style1">Depatrment Name : </td>
                     <td class="auto-style2">
@@ -57,30 +65,30 @@
                     </td>
                     <td>
                         <input id="st_hidden_id" runat="server" type="hidden" />
-                     
+
                     </td>
                 </tr>
             </table>
-        
+
             <asp:Label ID="lbl_meesage" runat="server" ForeColor="#CC0000"></asp:Label>
             <br />
-        
+
             <asp:GridView ID="grd_students" OnRowCommand="grd_students_RowCommand" AutoGenerateColumns="false" runat="server" Height="254px" Width="524px">
                 <Columns>
-                <asp:TemplateField>
-                    <ItemTemplate>
-                        <asp:Button CommandName="DeleteStudent" CommandArgument='<%#Eval("St_Id") %>' runat="server" Text ="Delete" />
-                        <asp:Button CommandName="EditCurrentStudent" CommandArgument='<%#Eval("St_Id") %>' runat="server" Text ="Edit" />
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:BoundField DataField="St_Fname" HeaderText="First Name" />
-                <asp:BoundField DataField="St_Lname" HeaderText="Last Name" />
-                <asp:BoundField DataField="St_Address" HeaderText="Address" />
-                <asp:BoundField DataField="St_Age" HeaderText="Age" />
-                <asp:BoundField DataField="Department.Dept_Name" HeaderText="Department" />
-            </Columns>
+                    <asp:TemplateField>
+                        <ItemTemplate>
+                            <asp:Button CommandName="DeleteStudent" CommandArgument='<%#Eval("St_Id") %>' runat="server" Text="Delete" />
+                            <asp:Button CommandName="EditCurrentStudent" CommandArgument='<%#Eval("St_Id") %>' runat="server" Text="Edit" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:BoundField DataField="St_Fname" HeaderText="First Name" />
+                    <asp:BoundField DataField="St_Lname" HeaderText="Last Name" />
+                    <asp:BoundField DataField="St_Address" HeaderText="Address" />
+                    <asp:BoundField DataField="St_Age" HeaderText="Age" />
+                    <asp:BoundField DataField="Department.Dept_Name" HeaderText="Department" />
+                </Columns>
             </asp:GridView>
-        
+
         </div>
     </form>
 </asp:Content>

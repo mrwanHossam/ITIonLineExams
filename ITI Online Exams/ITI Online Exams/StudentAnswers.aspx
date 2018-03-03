@@ -6,17 +6,17 @@
     <form id="form1" runat="server">
         <asp:Label ID="Label1_stid" runat="server" Font-Size="Medium" Text="Student Id"></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:DropDownList ID="DropDownList1_stid" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="St_Id" DataValueField="St_Id">
+        <asp:DropDownList ID="DropDownList1_stid" runat="server" AutoPostBack="True"  DataTextField="St_Id" DataValueField="St_Id">
         </asp:DropDownList>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:OnlineExamsProjectDBConnectionString %>" SelectCommand="SELECT [St_Id] FROM [Student]"></asp:SqlDataSource>
+        <%--<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:OnlineExamsProjectDBConnectionString %>" SelectCommand="SELECT [St_Id] FROM [Student]"></asp:SqlDataSource>--%>
         <br />
         <br />
         <br />
         <asp:Label ID="Label2" runat="server" Font-Size="Medium" Text="Exam Id"></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:DropDownList ID="DropDownList2_examid" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource2" DataTextField="Exam_Id" DataValueField="Exam_Id">
+        <asp:DropDownList ID="DropDownList2_examid" runat="server" AutoPostBack="True"  DataTextField="Exam_Id" DataValueField="Exam_Id">
         </asp:DropDownList>
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:OnlineExamsProjectDBConnectionString %>" SelectCommand="SELECT [Exam_Id] FROM [Exam]"></asp:SqlDataSource>
+        <%--<asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:OnlineExamsProjectDBConnectionString %>" SelectCommand="SELECT [Exam_Id] FROM [Exam]"></asp:SqlDataSource>--%>
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
         <br />

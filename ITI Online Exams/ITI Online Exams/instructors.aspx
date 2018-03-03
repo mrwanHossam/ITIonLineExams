@@ -1,10 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="instructors.aspx.cs" Inherits="ITI_Online_Exams.instructors" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="navPlaceHolder" runat="server">
+    <li><a href="#" accesskey="h">Home</a></li>
+    <li><a href="instructors.aspx" accesskey="i" id="current">instractors</a></li>
+    <li><a href="Students.aspx" accesskey="s">Students</a></li>
+    <li><a href="Questions.aspx" accesskey="q">Questions</a></li>
+    <li><a href="Topics.aspx" accesskey="t">Topics</a></li>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="headerPlaceHolder1" runat="server">
+    <br />
+    <br />
     <form id="form1" runat="server">
         <div>
-            <table style="width:100%;">
+            <table style="width: 100%;">
                 <tr>
                     <td class="auto-style1">Department Name :</td>
                     <td class="auto-style2">
@@ -63,8 +71,8 @@
             <Columns>
                 <asp:TemplateField>
                     <ItemTemplate>
-                        <asp:Button CommandName="DeleteInstructor" CommandArgument='<%#Eval("Ins_Id") %>' runat="server" Text ="Delete" />
-                        <asp:Button CommandName="EditCurrentInstructor" CommandArgument='<%#Eval("Ins_Id") %>' runat="server" Text ="Edit" />
+                        <asp:Button CommandName="DeleteInstructor" CommandArgument='<%#Eval("Ins_Id") %>' runat="server" Text="Delete" />
+                        <asp:Button CommandName="EditCurrentInstructor" CommandArgument='<%#Eval("Ins_Id") %>' runat="server" Text="Edit" />
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:BoundField DataField="Ins_Id" HeaderText="Instructor Id" />
