@@ -94,6 +94,15 @@ namespace ITI_Online_Exams {
         protected global::System.Web.UI.WebControls.Button btn_save_instructor;
         
         /// <summary>
+        /// lbl_msg_instructor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_msg_instructor;
+        
+        /// <summary>
         /// Instructor_Hidden_id control.
         /// </summary>
         /// <remarks>

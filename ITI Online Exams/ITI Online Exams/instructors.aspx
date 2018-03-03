@@ -49,6 +49,8 @@
                     <td class="auto-style1">&nbsp;</td>
                     <td class="auto-style2">
                         <asp:Button ID="btn_save_instructor" runat="server" OnClick="btn_save_instructor_Click" Text="Save" ValidationGroup="z" />
+                        <br />
+                        <asp:Label ID="lbl_msg_instructor" runat="server" ForeColor="#CC0000"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
                     <td>

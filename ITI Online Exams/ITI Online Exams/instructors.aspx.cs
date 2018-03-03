@@ -84,10 +84,17 @@ namespace ITI_Online_Exams
             {
                 OnlineExamsProjectDBEntities _context = new OnlineExamsProjectDBEntities();
                 Instructor _Instructor = _context.Instructors.Where(a => a.Ins_Id == _InstructorId).FirstOrDefault();
-
-                _context.Instructors.Remove(_Instructor);
-                _context.SaveChanges();
-                show_instructors();
+            if(_Instructor.Ins_Course.Count == 0)
+                {
+                    _context.Instructors.Remove(_Instructor);
+                    _context.SaveChanges();
+                    show_instructors();
+                }
+            else
+                {
+                    lbl_msg_instructor.Text = "instructor" + _Instructor.Ins_Name + "can't be deleted";
+                }
+               
             }
             else if (_actionName == "EditCurrentInstructor")
             {

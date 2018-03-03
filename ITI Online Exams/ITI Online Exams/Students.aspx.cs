@@ -61,8 +61,9 @@ namespace ITI_Online_Exams
                 show_departments();
                 clear_values();
             }
-            else
+            else //btn_save.Text == "Update"
             {
+                //when reload ..keep id value in hidden value to update by this id
                 int student_Id = int.Parse(st_hidden_id.Value);
                 OnlineExamsProjectDBEntities _container = new OnlineExamsProjectDBEntities();
                 Student stu_update = _container.Students.Where(a => a.St_Id == student_Id).FirstOrDefault();

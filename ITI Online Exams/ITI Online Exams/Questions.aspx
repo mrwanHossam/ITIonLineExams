@@ -55,6 +55,8 @@
                     <td class="auto-style1">&nbsp;</td>
                     <td class="auto-style2">
                         <asp:Button ID="btn_save_Q" runat="server" Text="Save" Width="105px" OnClick="btn_save_Q_Click" ValidationGroup="q" />
+                        <br />
+                        <asp:Label ID="lbl_msg_q" runat="server"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
                      <td>

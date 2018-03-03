@@ -108,10 +108,17 @@ namespace ITI_Online_Exams
             {
                 OnlineExamsProjectDBEntities _context = new OnlineExamsProjectDBEntities();
                 Question _Question = _context.Questions.Where(a => a.Qstn_Id == _QuestionId).FirstOrDefault();
-
-                _context.Questions.Remove(_Question);
-                _context.SaveChanges();
-                show_Questions();
+                if(_Question.Choices.Count==0 && _Question.Exam_Question.Count == 0)
+                {
+                    _context.Questions.Remove(_Question);
+                    _context.SaveChanges();
+                    show_Questions();
+                }
+                else
+                {
+                    lbl_msg_q.Text = "this Question can't be deleted";
+                }
+               
             }
             else if (_actionName == "EditCurrentQuestion")
             {

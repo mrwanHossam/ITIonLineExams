@@ -130,6 +130,15 @@ namespace ITI_Online_Exams {
         protected global::System.Web.UI.WebControls.Button btn_save_Q;
         
         /// <summary>
+        /// lbl_msg_q control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_msg_q;
+        
+        /// <summary>
         /// Q_hidden_id control.
         /// </summary>
         /// <remarks>
